@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AnalyticsDashboard">
+<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Analytics_Dashboard">
    <children>
       <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="116.0" layoutX="20.0" layoutY="34.0" strokeType="INSIDE" width="199.0" />
       <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="59.0" layoutY="84.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">

@@ -14,7 +14,7 @@ import lk.ijse.entity.UserSession;
 
 import java.io.IOException;
 
-public class DashboardController {
+public class Dashboard_Controller {
 
     @FXML
     private AnchorPane nodePane;

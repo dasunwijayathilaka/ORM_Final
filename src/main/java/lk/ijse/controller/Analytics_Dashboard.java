@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 
-public class AnalyticsDashboard {
+public class Analytics_Dashboard {
 
     @FXML
     private Label lblStudentCount;

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="nodePane" prefHeight="680.0" prefWidth="835.0" style="-fx-background-color: #184e77;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardController">
+<AnchorPane fx:id="nodePane" prefHeight="680.0" prefWidth="835.0" style="-fx-background-color: #184e77;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.Dashboard_Controller">
    <children>
       <AnchorPane fx:id="rootNode" layoutX="169.0" prefHeight="680.0" prefWidth="666.0" style="-fx-background-color: white;" />
       <JFXButton buttonType="RAISED" layoutX="-1.0" layoutY="179.0" onAction="#btnStudentsOnAction" prefHeight="49.0" prefWidth="170.0" text="Students" textFill="WHITE">

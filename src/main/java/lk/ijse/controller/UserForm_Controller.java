@@ -18,7 +18,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class UserFormController {
+public class UserForm_Controller {
 
     @FXML
     private TableColumn<UserTm, Integer> colId;

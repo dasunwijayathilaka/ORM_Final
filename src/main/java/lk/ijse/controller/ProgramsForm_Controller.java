@@ -11,11 +11,10 @@ import lk.ijse.bo.custom.ProgramBO;
 import lk.ijse.dto.ProgramDTO;
 import lk.ijse.tdm.ProgramTM;
 
-import java.awt.event.KeyEvent;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class ProgramsFormController {
+public class ProgramsForm_Controller {
 
     @FXML
     private JFXButton btnProgramDelete;

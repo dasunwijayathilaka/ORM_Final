@@ -20,7 +20,7 @@ import org.hibernate.Session;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class LoginFormController {
+public class LoginForm_Controller {
 
     @FXML
     private AnchorPane rootNode;

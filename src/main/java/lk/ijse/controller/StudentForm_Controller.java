@@ -26,7 +26,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class StudentFormController {
+public class StudentForm_Controller {
 
     @FXML
     private TableColumn<?, ?> colAddress;
