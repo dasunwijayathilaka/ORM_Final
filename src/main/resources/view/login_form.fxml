@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import PasswordField -->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="835.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="911.0" layoutX="-69.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/loginBG.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffff29" height="373.0" layoutX="263.0" layoutY="137.0" stroke="#ffffffab" strokeType="INSIDE" width="334.0" />
+      <Text fill="WHITE" layoutX="370.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="307.0" layoutY="291.0" onAction="#txtUsernameOnAction" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="35.0" prefWidth="249.0" promptText="user name" style="-fx-background-radius: 17;" />
+      <PasswordField fx:id="txtPassword" layoutX="307.0" layoutY="352.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="249.0" promptText="password" style="-fx-background-radius: 17;" />
+      <Label layoutX="310.0" layoutY="272.0" text="user name:" textFill="WHITE" />
+      <Label layoutX="312.0" layoutY="333.0" text="password" textFill="WHITE" />
+      <Line endX="106.4000244140625" layoutX="431.0" layoutY="240.0" startX="-100.0" stroke="WHITE">
+         <effect>
+            <MotionBlur />
+         </effect></Line>
+      <Line endX="134.5611572265625" layoutX="416.0" layoutY="406.0" startX="-100.0" stroke="#ffffff26" />
+      <JFXButton layoutX="368.0" layoutY="434.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Login" textFill="#0075f2">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></JFXButton>
+
+
+   </children>
+</AnchorPane>

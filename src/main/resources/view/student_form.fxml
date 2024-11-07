@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.StudentFormController">
+   <children>
+      <Text layoutX="237.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Al Nile Bold" size="27.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="378.0" layoutY="128.0" onKeyReleased="#nameKeyRelaseAction" prefHeight="33.0" prefWidth="235.0" promptText="Name" />
+      <JFXButton fx:id="btnStudentSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="422.0" layoutY="239.0" onAction="#btnSaveOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #119822;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnStudentUpdate" buttonType="RAISED" contentDisplay="RIGHT" layoutX="359.0" layoutY="239.0" onAction="#btnUpdateOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #db7c26;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnStudentDelete" buttonType="RAISED" contentDisplay="RIGHT" layoutX="294.0" layoutY="239.0" onAction="#btnDeleteOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="228.0" layoutY="239.0" onAction="#btnClearOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #6c757d;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtAddress" layoutX="377.0" layoutY="168.0" onKeyReleased="#addressKeyRelaseAction" prefHeight="33.0" prefWidth="235.0" promptText="Address" />
+      <TextField fx:id="txtPhoneNumber" layoutX="66.0" layoutY="169.0" onKeyReleased="#telKeyRelaseAction" prefHeight="33.0" prefWidth="236.0" promptText="Phone Number" />
+      <Label layoutX="69.0" layoutY="132.0" text="ID:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" layoutX="101.0" layoutY="132.0" prefHeight="24.0" prefWidth="63.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblStudent" layoutX="36.0" layoutY="293.0" prefHeight="350.0" prefWidth="599.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="34.645668029785156" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="187.2063446044922" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="150.51791381835938" text="Address" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="97.48208618164062" text="Phone Number" />
+            <TableColumn fx:id="colRegisterDate" minWidth="0.0" prefWidth="77.439453125" text="Register Date" />
+            <TableColumn fx:id="colUserId" prefWidth="49.560546875" text="User ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtID" layoutX="66.0" layoutY="85.0" onKeyReleased="#idKeyReleaseAction" prefHeight="33.0" prefWidth="236.0" promptText="ID" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="243.0" layoutY="91.0" onAction="#btnSearchOnAction" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: gray;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="378.0" layoutY="87.0" text="Date:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="428.0" layoutY="87.0" prefHeight="24.0" prefWidth="179.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="132.0" text="User ID:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserId" layoutX="255.0" layoutY="132.0" prefHeight="24.0" prefWidth="63.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AnalyticsDashboard">
+   <children>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="116.0" layoutX="20.0" layoutY="34.0" strokeType="INSIDE" width="199.0" />
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="59.0" layoutY="84.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/student-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="46.0" prefHeight="33.0" prefWidth="102.0" text="Students" textFill="#00000083">
+         <font>
+            <Font name="Tahoma" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentCount" layoutX="112.0" layoutY="87.0" prefHeight="48.0" prefWidth="98.0" text="100" textFill="#00000083">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="116.0" layoutX="230.0" layoutY="34.0" strokeType="INSIDE" width="199.0" />
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="269.0" layoutY="84.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/programs.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="278.0" layoutY="46.0" prefHeight="33.0" prefWidth="110.0" text="Programs" textFill="#00000083">
+         <font>
+            <Font name="Tahoma" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentCount1" layoutX="332.0" layoutY="87.0" prefHeight="48.0" prefWidth="98.0" text="8" textFill="#00000083">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="116.0" layoutX="444.0" layoutY="34.0" strokeType="INSIDE" width="199.0" />
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="483.0" layoutY="84.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/registrations.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="469.0" layoutY="46.0" prefHeight="33.0" prefWidth="150.0" text="Registrations" textFill="#00000083">
+         <font>
+            <Font name="Tahoma" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentCount11" layoutX="536.0" layoutY="87.0" prefHeight="48.0" prefWidth="98.0" text="170" textFill="#00000083">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

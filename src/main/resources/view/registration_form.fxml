@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="672.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationController">
+   <children>
+      <Text layoutX="217.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Registration" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Al Nile Bold" size="27.0" />
+         </font>
+      </Text>
+      <Label layoutX="39.0" layoutY="108.0" text="Registration ID:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegistrationId" layoutX="143.0" layoutY="109.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="39.0" layoutY="148.0" text="Student ID:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbProgramName" layoutX="143.0" layoutY="182.0" onAction="#cmbProgramNameOnAction" prefHeight="26.0" prefWidth="225.0" />
+      <Label layoutX="39.0" layoutY="188.0" text="Program Name" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="188.0" text="Program ID:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgramId" layoutX="550.0" layoutY="189.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="500.0" layoutY="108.0" text="Date:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="543.0" layoutY="109.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="449.0" layoutY="147.0" text="Student name:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentName" layoutX="543.0" layoutY="148.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="277.0" layoutY="238.0" text="Fee:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFee" layoutX="322.0" layoutY="239.0" prefHeight="17.0" prefWidth="85.0" />
+      <TableView fx:id="tblRegistration" layoutX="17.0" layoutY="343.0" prefHeight="306.0" prefWidth="635.0">
+         <columns>
+            <TableColumn fx:id="colRegId" prefWidth="42.849830627441406" text="Reg ID" />
+            <TableColumn fx:id="colStudentId" prefWidth="64.39986419677734" text="Student ID" />
+            <TableColumn fx:id="colStudentName" prefWidth="115.65023803710938" text="Student Name" />
+            <TableColumn fx:id="colProgramId" prefWidth="54.900146484375" text="Pro ID" />
+            <TableColumn fx:id="colProgramName" prefWidth="172.35028076171875" text="Program Name" />
+            <TableColumn fx:id="colPaidAmount" prefWidth="93.74923706054688" text="Paid amount" />
+            <TableColumn fx:id="colFee" prefWidth="89.0" text="Fee" />
+         </columns>
+      </TableView>
+      <Label layoutX="431.0" layoutY="237.0" prefHeight="18.0" prefWidth="107.0" text="Program duration:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgramDuration" layoutX="548.0" layoutY="239.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="40.0" layoutY="239.0" text="Payment:" textFill="#757575">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFirstPayment" layoutX="107.0" layoutY="235.0" prefHeight="16.0" prefWidth="131.0" promptText="Payment" />
+      <TextField fx:id="txtStudentId" layoutX="139.0" layoutY="146.0" prefHeight="26.0" prefWidth="212.0" promptText="ID" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="296.0" layoutY="148.0" onAction="#btnSearchOnAction" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: gray;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="109.0" layoutY="275.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: black; -fx-background-radius: 6;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="46.0" layoutY="43.0" onAction="#btnViewRegistrationDetails" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #003249; -fx-background-radius: 6;" text="View details" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
