@@ -7,72 +7,79 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserForm_Controller">
+<AnchorPane fx:id="rootNode" prefHeight="794.0" prefWidth="1182.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserFormController">
    <children>
-      <Text layoutX="252.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User" textAlignment="CENTER" underline="true">
+      <ImageView fitHeight="806.0" fitWidth="1190.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images2/user.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#fff9f9" layoutX="240.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User" textAlignment="CENTER" underline="true" wrappingWidth="237.19757080078125">
          <font>
-            <Font name="Al Nile Bold" size="27.0" />
+            <Font name="Britannic Bold" size="38.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUserName" layoutX="69.0" layoutY="168.0" prefHeight="33.0" prefWidth="235.0" promptText="User name" />
-      <JFXButton fx:id="btnUserSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="422.0" layoutY="239.0" onAction="#btnSaveOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #119822;" text="Save" textFill="WHITE">
+      <TextField fx:id="txtUserName" layoutX="201.0" layoutY="159.0" prefHeight="34.0" prefWidth="315.0" promptText="User name" style="-fx-background-radius: 15;" />
+      <JFXButton fx:id="btnUserSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="425.0" layoutY="253.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: purple; -fx-background-radius: 15;" text="Save" textFill="WHITE">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="Bauhaus 93" size="11.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnUserUpdate" buttonType="RAISED" contentDisplay="RIGHT" layoutX="359.0" layoutY="239.0" onAction="#btnUpdateOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #db7c26;" text="Update" textFill="WHITE">
+      <JFXButton fx:id="btnUserUpdate" buttonType="RAISED" contentDisplay="RIGHT" layoutX="358.0" layoutY="253.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: gold; -fx-background-radius: 15;" text="Update" textFill="WHITE">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="Britannic Bold" size="11.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnUserDelete" buttonType="RAISED" contentDisplay="RIGHT" layoutX="294.0" layoutY="239.0" onAction="#btnDeleteOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+      <JFXButton fx:id="btnUserDelete" buttonType="RAISED" contentDisplay="RIGHT" layoutX="290.0" layoutY="253.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 15;" text="Delete" textFill="WHITE">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="Britannic Bold" size="11.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="228.0" layoutY="239.0" onAction="#btnClearOnAction" prefHeight="10.0" prefWidth="50.0" style="-fx-background-color: #6c757d;" text="Clear" textFill="WHITE">
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="223.0" layoutY="253.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Clear" textFill="WHITE">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="Bauhaus 93" size="11.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txtUserPassword" layoutX="373.0" layoutY="169.0" prefHeight="33.0" prefWidth="236.0" promptText="User password" />
-      <Label layoutX="69.0" layoutY="129.0" text="ID:">
+      <TextField fx:id="txtUserPassword" layoutX="201.0" layoutY="206.0" prefHeight="34.0" prefWidth="315.0" promptText="User password" style="-fx-background-radius: 15;" />
+      <Label layoutX="75.0" layoutY="116.0" text="ID:" textFill="WHITE">
          <font>
-            <Font size="19.0" />
+            <Font name="Gadugi" size="19.0" />
          </font>
       </Label>
-      <TableView fx:id="tblUser" layoutX="63.0" layoutY="293.0" prefHeight="350.0" prefWidth="556.0">
+      <TableView fx:id="tblUser" layoutX="63.0" layoutY="293.0" prefHeight="167.0" prefWidth="556.0" style="-fx-background-color: gray;">
         <columns>
-          <TableColumn fx:id="colId" prefWidth="53.51062774658203" text="ID" />
-          <TableColumn fx:id="colUserName" prefWidth="281.48934173583984" text="User Name" />
-            <TableColumn fx:id="colRole" prefWidth="220.21282958984375" text="Role" />
+          <TableColumn fx:id="colId" prefWidth="89.60000228881836" text="ID" />
+          <TableColumn fx:id="colUserName" prefWidth="236.8000030517578" text="User Name" />
+            <TableColumn fx:id="colRole" prefWidth="229.60003662109375" text="Role" />
         </columns>
       </TableView>
-      <Label fx:id="lblUserId" layoutX="106.0" layoutY="129.0" text="1">
+      <Label fx:id="lblUserId" layoutX="108.0" layoutY="116.0" text="1" textFill="#f7f7f7">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="cmbUserRole" layoutX="423.0" layoutY="128.0" prefHeight="26.0" prefWidth="186.0" />
-      <Label layoutX="379.0" layoutY="129.0" text="role:">
+      <JFXComboBox fx:id="cmbUserRole" layoutX="201.0" layoutY="114.0" prefHeight="34.0" prefWidth="315.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+      <Label layoutX="159.0" layoutY="113.0" text="Role:" textFill="WHITE">
          <font>
-            <Font size="19.0" />
+            <Font name="Dubai Regular" size="19.0" />
          </font>
       </Label>
    </children>

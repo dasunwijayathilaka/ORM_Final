@@ -15,31 +15,37 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="835.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginForm_Controller">
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="835.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
    <children>
       <ImageView fitHeight="696.0" fitWidth="911.0" layoutX="-69.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/images/loginBG.png" />
+            <Image url="@../assets/images2/cut.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffff29" height="373.0" layoutX="263.0" layoutY="137.0" stroke="#ffffffab" strokeType="INSIDE" width="334.0" />
-      <Text fill="#0b0909" layoutX="370.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#ffffff29" height="336.0" layoutX="28.0" layoutY="125.0" stroke="#ffffffab" strokeType="INSIDE" width="225.0" />
+      <Text fontSmoothingType="LCD" layoutX="101.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="116.4664306640625">
          <font>
-            <Font name="System Bold" size="54.0" />
+            <Font name="Webdings" size="38.0" />
          </font>
       </Text>
-      <TextField fx:id="txtUserName" layoutX="307.0" layoutY="291.0" onAction="#txtUsernameOnAction" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="35.0" prefWidth="249.0" promptText="user name" style="-fx-background-radius: 17;" />
-      <PasswordField fx:id="txtPassword" layoutX="307.0" layoutY="352.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="249.0" promptText="password" style="-fx-background-radius: 17;" />
-      <Label layoutX="310.0" layoutY="272.0" text="user name:" textFill="WHITE" />
-      <Label layoutX="312.0" layoutY="333.0" text="password" textFill="WHITE" />
-      <Line endX="106.4000244140625" layoutX="431.0" layoutY="240.0" startX="-100.0" stroke="WHITE">
+      <TextField fx:id="txtUserName" layoutX="34.0" layoutY="240.0" onAction="#txtUsernameOnAction" onKeyReleased="#txtUserNameOnKeyReleased" prefHeight="35.0" prefWidth="211.0" promptText="user_name" style="-fx-background-radius: 15; -fx-background-color: white;" />
+      <PasswordField fx:id="txtPassword" layoutX="34.0" layoutY="333.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="211.0" promptText="password" style="-fx-background-radius: 15;" />
+      <Label layoutX="44.0" layoutY="215.0" text="User Name:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="308.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Line endX="56.19999694824219" endY="1.52587890625E-5" layoutX="145.0" layoutY="169.0" startX="-59.80000305175781" startY="1.52587890625E-5" stroke="#1b1717">
          <effect>
             <MotionBlur />
          </effect></Line>
-      <Line endX="134.5611572265625" layoutX="416.0" layoutY="406.0" startX="-100.0" stroke="#ffffff26" />
-      <JFXButton layoutX="368.0" layoutY="434.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Login" textFill="#0075f2">
+      <Line endX="85.79998779296875" layoutX="122.0" layoutY="387.0" startX="-40.600006103515625" stroke="#00000026" />
+      <JFXButton layoutX="104.0" layoutY="403.0" onAction="#btnLoginOnAction" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Login" textFill="WHITE">
          <font>
-            <Font name="System Bold Italic" size="13.0" />
+            <Font name="Microsoft PhagsPa" size="13.0" />
          </font></JFXButton>
 
 
