@@ -12,21 +12,20 @@ import lk.ijse.bo.BOFactory;
 import lk.ijse.bo.custom.StudentBO;
 import lk.ijse.config.SessionFactoryConfiguration;
 import lk.ijse.dto.StudentDTO;
-import lk.ijse.dto.UserDTO;
 import lk.ijse.entity.Student;
 import lk.ijse.entity.User;
 import lk.ijse.entity.UserSession;
 import lk.ijse.tdm.StudentTm;
-import lk.ijse.tdm.UserTm;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class StudentForm_Controller {
+public class StudentFormController {
 
     @FXML
     private TableColumn<?, ?> colAddress;
@@ -143,6 +142,8 @@ public class StudentForm_Controller {
             }
         } catch (SQLException | ClassNotFoundException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -157,7 +158,7 @@ public class StudentForm_Controller {
             String nextStudentId = studentBO.generateNewID();
 
             lblId.setText(String.valueOf(nextStudentId));
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -196,7 +197,7 @@ public class StudentForm_Controller {
             }
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -243,6 +244,8 @@ public class StudentForm_Controller {
 
                 } catch (SQLException | ClassNotFoundException e) {
                     new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
             }
         } else {
@@ -308,6 +311,8 @@ public class StudentForm_Controller {
                     }
                 } catch (SQLException | ClassNotFoundException e) {
                     new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
             }
         } else {

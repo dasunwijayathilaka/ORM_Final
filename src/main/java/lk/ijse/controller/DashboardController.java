@@ -14,7 +14,7 @@ import lk.ijse.entity.UserSession;
 
 import java.io.IOException;
 
-public class Dashboard_Controller {
+public class DashboardController {
 
     @FXML
     private AnchorPane nodePane;
@@ -22,6 +22,8 @@ public class Dashboard_Controller {
     @FXML
     private AnchorPane rootNode;
 
+    @FXML
+    private JFXButton btnPayment;
 
     @FXML
     private JFXButton btnDashboard;
@@ -32,22 +34,22 @@ public class Dashboard_Controller {
     @FXML
     private JFXButton btnPrograms;
 
-    int userId = UserSession.getInstance().getUserId();
+    @FXML
+    private JFXButton btnRegistration;
+
+    @FXML
+    private JFXButton btnStudent;
+
+
     String role = UserSession.getInstance().getRole();
 
 
     // Initialize method to load the main dashboard after a delay
     public void initialize() {
-//         Load mainDashboard_form.fxml after a 1-second delay
+        // Load mainDashboard_form.fxml after a 1-second delay
         PauseTransition delay = new PauseTransition(Duration.seconds(0.0001));
         delay.setOnFinished(event -> loadMainDashboard());
         delay.play();
-
-//        dButton.setStyle("-fx-background-color: #192a51");
-
-        // Set action listeners for each button in the VBox
-//        setButtonActions();
-
 
         checkLoggedUser();
     }
@@ -58,8 +60,14 @@ public class Dashboard_Controller {
             btnUser.setVisible(false);
             btnPrograms.setVisible(false);
         }
+        if (role.equals("tempory_user")){
+            btnPrograms.setVisible(false);
+            btnDashboard.setVisible(false);
+            btnPayment.setVisible(false);
+            btnRegistration.setVisible(false);
+            btnStudent.setVisible(false);
+        }
     }
-
 
 
     // Method to load the main dashboard
@@ -78,10 +86,6 @@ public class Dashboard_Controller {
             e.printStackTrace();
         }
     }
-
-
-
-
 
     @FXML
     void btnDashboardOnAction(ActionEvent event) throws IOException {
@@ -104,7 +108,6 @@ public class Dashboard_Controller {
         stage.setScene(scene);
         stage.setTitle("The Culinary Academy");
     }
-
 
     @FXML
     void btnProgramsOnAction(ActionEvent event) throws IOException {
@@ -142,6 +145,17 @@ public class Dashboard_Controller {
     @FXML
     void btnUser(ActionEvent event) throws IOException {
         FXMLLoader productLoader = new FXMLLoader(getClass().getResource("/view/user_form.fxml"));
+        Parent productRoot = productLoader.load();
+        rootNode.getChildren().clear();
+        rootNode.getChildren().add(productRoot);
+
+        Stage stage = (Stage) rootNode.getScene().getWindow();
+        stage.setTitle("");
+    }
+
+    @FXML
+    void btnPaymentsOnAction(ActionEvent event) throws IOException {
+        FXMLLoader productLoader = new FXMLLoader(getClass().getResource("/view/payment_form.fxml"));
         Parent productRoot = productLoader.load();
         rootNode.getChildren().clear();
         rootNode.getChildren().add(productRoot);

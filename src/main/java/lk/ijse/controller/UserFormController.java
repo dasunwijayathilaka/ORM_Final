@@ -15,10 +15,11 @@ import lk.ijse.dto.UserDTO;
 import lk.ijse.tdm.UserTm;
 import org.mindrot.jbcrypt.BCrypt;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class UserForm_Controller {
+public class UserFormController {
 
     @FXML
     private TableColumn<UserTm, Integer> colId;
@@ -108,10 +109,10 @@ public class UserForm_Controller {
             for (UserDTO userDTO : allUsers) {
                 tblUser.getItems().add(new UserTm(userDTO.getUserId(), userDTO.getUsername(), userDTO.getRole()));
             }
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
-        } catch (ClassNotFoundException e) {
-            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -135,7 +136,7 @@ public class UserForm_Controller {
             String nextUserId = userBO.generateNewID();
 
             lblUserId.setText(String.valueOf(nextUserId));
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -167,7 +168,7 @@ public class UserForm_Controller {
             }
         } catch (SQLException e) {
             new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -195,7 +196,7 @@ public class UserForm_Controller {
                     clearFields();
                     initialize();
                 }
-            } catch (SQLException | ClassNotFoundException e) {
+            } catch (SQLException | ClassNotFoundException | IOException e) {
                 throw new RuntimeException(e);
             }
         }
@@ -226,6 +227,8 @@ public class UserForm_Controller {
                 }
             } catch (SQLException | ClassNotFoundException e) {
                 new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         }
     }

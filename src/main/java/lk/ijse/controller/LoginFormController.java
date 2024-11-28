@@ -20,7 +20,7 @@ import org.hibernate.Session;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class LoginForm_Controller {
+public class LoginFormController {
 
     @FXML
     private AnchorPane rootNode;
@@ -70,8 +70,7 @@ public class LoginForm_Controller {
                   nisa tempory login details tikak dila manual user id ekakui role ekakui dapu eka*/
 
                 // Store userId and role in Session singleton
-                session = SessionFactoryConfiguration.getInstance().getSession();
-                UserSession.getInstance().setUser(123, "admin");
+                UserSession.getInstance().setUser(123, "tempory_user");
 
                 navigateToTheDashboard((Stage) rootNode.getScene().getWindow());
 
