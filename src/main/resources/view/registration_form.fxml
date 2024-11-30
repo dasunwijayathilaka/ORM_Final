@@ -13,75 +13,75 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootNode" prefHeight="717.0" prefWidth="1289.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationController">
+<AnchorPane fx:id="rootNode" prefHeight="956.0" prefWidth="1673.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationController">
    <children>
-      <ImageView fitHeight="760.0" fitWidth="1292.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="943.0" fitWidth="1649.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/images2/reg.jpg" />
+            <Image url="@../assets/images2/r2.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="217.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Registration" textAlignment="CENTER" underline="true">
+      <Text layoutX="599.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Registration" textAlignment="CENTER" underline="true">
          <font>
-            <Font name="Britannic Bold" size="27.0" />
+            <Font name="Britannic Bold" size="31.0" />
          </font>
       </Text>
-      <Label layoutX="37.0" layoutY="108.0" text="Registration ID:">
+      <Label layoutX="273.0" layoutY="99.0" text="Registration ID:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblRegistrationId" layoutX="152.0" layoutY="109.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblRegistrationId" layoutX="408.0" layoutY="99.0" prefHeight="19.0" prefWidth="150.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="63.0" layoutY="191.0" text="Student ID:">
+      <Label layoutX="300.0" layoutY="186.0" text="Student ID:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="cmbProgramName" layoutX="148.0" layoutY="134.0" onAction="#cmbProgramNameOnAction" prefHeight="34.0" prefWidth="206.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
-      <Label layoutX="37.0" layoutY="146.0" text="Program Name:">
+      <JFXComboBox fx:id="cmbProgramName" layoutX="400.0" layoutY="127.0" onAction="#cmbProgramNameOnAction" prefHeight="34.0" prefWidth="289.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+      <Label layoutX="270.0" layoutY="137.0" text="Program Name:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="458.0" layoutY="171.0" text="Program ID:">
+      <Label layoutX="875.0" layoutY="190.0" text="Program ID:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblProgramId" layoutX="550.0" layoutY="172.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblProgramId" layoutX="967.0" layoutY="190.0" prefHeight="17.0" prefWidth="85.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="500.0" layoutY="108.0" text="Date:">
+      <Label layoutX="921.0" layoutY="99.0" text="Date:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="549.0" layoutY="109.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblDate" layoutX="981.0" layoutY="99.0" prefHeight="19.0" prefWidth="150.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="445.0" layoutY="139.0" text="Student name:">
+      <Label layoutX="862.0" layoutY="144.0" text="Student name:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblStudentName" layoutX="549.0" layoutY="140.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblStudentName" layoutX="971.0" layoutY="147.0" prefHeight="17.0" prefWidth="85.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="506.0" layoutY="231.0" text="Fee:">
+      <Label layoutX="921.0" layoutY="290.0" text="Fee:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblFee" layoutX="552.0" layoutY="232.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblFee" layoutX="971.0" layoutY="290.0" prefHeight="17.0" prefWidth="85.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <TableView fx:id="tblRegistration" layoutX="16.0" layoutY="335.0" prefHeight="306.0" prefWidth="635.0" style="-fx-background-color: gray;">
+      <TableView fx:id="tblRegistration" layoutX="266.0" layoutY="397.0" prefHeight="306.0" prefWidth="932.0" style="-fx-background-color: gray;">
          <columns>
             <TableColumn fx:id="colRegId" prefWidth="42.849830627441406" text="Reg ID" />
             <TableColumn fx:id="colStudentId" prefWidth="64.39986419677734" text="Student ID" />
@@ -92,23 +92,23 @@
             <TableColumn fx:id="colFee" prefWidth="89.0" text="Fee" />
          </columns>
       </TableView>
-      <Label layoutX="420.0" layoutY="201.0" prefHeight="19.0" prefWidth="133.0" text="Program duration:">
+      <Label layoutX="837.0" layoutY="236.0" prefHeight="19.0" prefWidth="133.0" text="Program duration:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblProgramDuration" layoutX="548.0" layoutY="203.0" prefHeight="17.0" prefWidth="85.0">
+      <Label fx:id="lblProgramDuration" layoutX="971.0" layoutY="236.0" prefHeight="17.0" prefWidth="85.0">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Label>
-      <Label layoutX="69.0" layoutY="242.0" text="Payment:">
+      <Label layoutX="309.0" layoutY="236.0" text="Payment:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtFirstPayment" layoutX="146.0" layoutY="235.0" onKeyReleased="#paymentOnKeyReleaseOnAction" prefHeight="34.0" prefWidth="218.0" promptText="Payment" style="-fx-background-radius: 15;" />
-      <TextField fx:id="txtStudentId" layoutX="146.0" layoutY="184.0" onKeyReleased="#idKeyReleaseAction" prefHeight="34.0" prefWidth="218.0" promptText="ID" style="-fx-background-radius: 15;" />
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="308.0" layoutY="190.0" onAction="#btnSearchOnAction" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Search" textFill="WHITE">
+      <TextField fx:id="txtFirstPayment" layoutX="401.0" layoutY="229.0" onKeyReleased="#paymentOnKeyReleaseOnAction" prefHeight="34.0" prefWidth="298.0" promptText="Payment" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtStudentId" layoutX="401.0" layoutY="178.0" onKeyReleased="#idKeyReleaseAction" prefHeight="34.0" prefWidth="298.0" promptText="ID" style="-fx-background-radius: 15;" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="643.0" layoutY="178.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="56.0" style="-fx-background-color: black; -fx-background-radius: 15;" text="Search" textFill="WHITE">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>
@@ -116,7 +116,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="389.0" layoutY="275.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: red; -fx-background-radius: 6;" text="Register" textFill="WHITE">
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="698.0" layoutY="350.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: red; -fx-background-radius: 6;" text="Register" textFill="WHITE">
          <font>
             <Font name="System Italic" size="11.0" />
          </font>
@@ -124,7 +124,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="551.0" layoutY="275.0" onAction="#btnViewRegistrationDetailsOnAction" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: purple; -fx-background-radius: 6;" text="View details" textFill="WHITE">
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="611.0" layoutY="350.0" onAction="#btnViewRegistrationDetailsOnAction" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: purple; -fx-background-radius: 6;" text="View details" textFill="WHITE">
          <font>
             <Font name="System Italic" size="11.0" />
          </font>
@@ -132,7 +132,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="468.0" layoutY="275.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: blue; -fx-background-radius: 6;" text="Clear" textFill="WHITE">
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="786.0" layoutY="350.0" onAction="#btnClearOnAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: blue; -fx-background-radius: 6;" text="Clear" textFill="WHITE">
          <font>
             <Font name="System Italic" size="11.0" />
          </font>
@@ -140,8 +140,8 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXComboBox fx:id="cmbPaymentMethod" layoutX="147.0" layoutY="281.0" prefHeight="34.0" prefWidth="216.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
-      <Label layoutX="20.0" layoutY="287.0" text="Payment Method:">
+      <JFXComboBox fx:id="cmbPaymentMethod" layoutX="400.0" layoutY="283.0" prefHeight="34.0" prefWidth="298.0" style="-fx-background-color: white; -fx-background-radius: 15;" />
+      <Label layoutX="257.0" layoutY="290.0" text="Payment Method:">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

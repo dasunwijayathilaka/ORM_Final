@@ -12,20 +12,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootNode" prefHeight="802.0" prefWidth="1194.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.StudentFormController">
+<AnchorPane fx:id="rootNode" prefHeight="953.0" prefWidth="1447.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.StudentFormController">
    <children>
-      <ImageView fitHeight="824.0" fitWidth="1194.0" layoutX="1.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="978.0" fitWidth="1446.0" layoutX="1.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/images2/st.jpg" />
+            <Image url="@../assets/images2/stu3.jpg" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="237.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" underline="true">
+      <Text layoutX="366.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Student" textAlignment="CENTER" underline="true">
          <font>
-            <Font name="Britannic Bold" size="27.0" />
+            <Font name="Britannic Bold" size="34.0" />
          </font>
       </Text>
-      <TextField fx:id="txtName" layoutX="342.0" layoutY="146.0" onKeyReleased="#nameKeyRelaseAction" prefHeight="34.0" prefWidth="270.0" promptText="Name" style="-fx-background-radius: 15;" />
-      <JFXButton fx:id="btnStudentSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="425.0" layoutY="303.0" onAction="#btnSaveOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #119822; -fx-background-radius: 15;" text="Save" textFill="WHITE">
+      <TextField fx:id="txtName" layoutX="52.0" layoutY="251.0" onKeyReleased="#nameKeyRelaseAction" prefHeight="34.0" prefWidth="270.0" promptText="Name" style="-fx-background-radius: 15;" />
+      <JFXButton fx:id="btnStudentSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="580.0" layoutY="360.0" onAction="#btnSaveOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #119822; -fx-background-radius: 15;" text="Save" textFill="WHITE">
          <font>
             <Font name="Bauhaus 93" size="11.0" />
          </font>
@@ -33,7 +33,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnStudentUpdate" buttonType="RAISED" contentDisplay="RIGHT" layoutX="340.0" layoutY="303.0" onAction="#btnUpdateOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: gold; -fx-background-radius: 15;" text="Update" textFill="WHITE">
+      <JFXButton fx:id="btnStudentUpdate" buttonType="RAISED" contentDisplay="RIGHT" layoutX="495.0" layoutY="360.0" onAction="#btnUpdateOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: gold; -fx-background-radius: 15;" text="Update" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="11.0" />
          </font>
@@ -41,7 +41,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton fx:id="btnStudentDelete" buttonType="RAISED" contentDisplay="RIGHT" layoutX="256.0" layoutY="303.0" onAction="#btnDeleteOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 15;" text="Delete" textFill="WHITE">
+      <JFXButton fx:id="btnStudentDelete" buttonType="RAISED" contentDisplay="RIGHT" layoutX="411.0" layoutY="360.0" onAction="#btnDeleteOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 15;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Bold" size="11.0" />
          </font>
@@ -49,7 +49,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="172.0" layoutY="303.0" onAction="#btnClearOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Clear" textFill="WHITE">
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="327.0" layoutY="360.0" onAction="#btnClearOnAction" prefHeight="28.0" prefWidth="70.0" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Clear" textFill="WHITE">
          <font>
             <Font name="Bauhaus 93" size="11.0" />
          </font>
@@ -57,30 +57,30 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txtAddress" layoutX="341.0" layoutY="193.0" onKeyReleased="#addressKeyRelaseAction" prefHeight="34.0" prefWidth="270.0" promptText="Address" style="-fx-background-radius: 15;" />
-      <TextField fx:id="txtPhoneNumber" layoutX="343.0" layoutY="247.0" onKeyReleased="#telKeyRelaseAction" prefHeight="34.0" prefWidth="270.0" promptText="Phone Number" style="-fx-background-radius: 15;" />
-      <Label layoutX="91.0" layoutY="179.0" text="ID:" textFill="WHITE">
+      <TextField fx:id="txtAddress" layoutX="353.0" layoutY="249.0" onKeyReleased="#addressKeyRelaseAction" prefHeight="34.0" prefWidth="270.0" promptText="Address" style="-fx-background-radius: 15;" />
+      <TextField fx:id="txtPhoneNumber" layoutX="641.0" layoutY="249.0" onKeyReleased="#telKeyRelaseAction" prefHeight="34.0" prefWidth="248.0" promptText="Phone Number" style="-fx-background-radius: 15;" />
+      <Label layoutX="648.0" layoutY="186.0" text="ID:">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Label fx:id="lblId" layoutX="125.0" layoutY="179.0" prefHeight="28.0" prefWidth="94.0">
+      <Label fx:id="lblId" layoutX="689.0" layoutY="185.0" prefHeight="28.0" prefWidth="94.0" textFill="#b715df">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <TableView fx:id="tblStudent" layoutX="36.0" layoutY="353.0" prefHeight="292.0" prefWidth="599.0" style="-fx-background-color: gray;">
+      <TableView fx:id="tblStudent" layoutX="47.0" layoutY="456.0" prefHeight="292.0" prefWidth="838.0" style="-fx-background-color: gray;">
         <columns>
           <TableColumn fx:id="colId" prefWidth="34.645668029785156" text="ID" />
-          <TableColumn fx:id="colName" prefWidth="113.60000610351562" text="Name" />
-            <TableColumn fx:id="colAddress" prefWidth="117.59999084472656" text="Address" />
-            <TableColumn fx:id="colPhoneNumber" prefWidth="136.79998779296875" text="Phone Number" />
-            <TableColumn fx:id="colRegisterDate" minWidth="0.0" prefWidth="99.2000732421875" text="Register Date" />
-            <TableColumn fx:id="colUserId" prefWidth="101.5999755859375" text="User ID" />
+          <TableColumn fx:id="colName" prefWidth="166.39996337890625" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="136.0" text="Address" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="168.0" text="Phone Number" />
+            <TableColumn fx:id="colRegisterDate" minWidth="0.0" prefWidth="181.60003662109375" text="Register Date" />
+            <TableColumn fx:id="colUserId" prefWidth="152.0" text="User ID" />
         </columns>
       </TableView>
-      <TextField fx:id="txtID" layoutX="343.0" layoutY="93.0" onKeyReleased="#idKeyReleaseAction" prefHeight="34.0" prefWidth="270.0" promptText="ID" style="-fx-background-radius: 15;" />
-      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="552.0" layoutY="99.0" onAction="#btnSearchOnAction" prefHeight="21.0" prefWidth="52.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Search" textFill="WHITE">
+      <TextField fx:id="txtID" layoutX="262.0" layoutY="111.0" onKeyReleased="#idKeyReleaseAction" prefHeight="34.0" prefWidth="454.0" promptText="ID" style="-fx-background-radius: 15;" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="666.0" layoutY="111.0" onAction="#btnSearchOnAction" prefHeight="34.0" prefWidth="52.0" style="-fx-background-color: black; -fx-background-radius: 15;" text="Search" textFill="WHITE">
          <font>
             <Font name="System Bold" size="9.0" />
          </font>
@@ -88,22 +88,22 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label layoutX="80.0" layoutY="98.0" text="Date:" textFill="#fffafa">
+      <Label layoutX="135.0" layoutY="186.0" text="Date:">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="19.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="138.0" layoutY="96.0" prefHeight="28.0" prefWidth="197.0">
+      <Label fx:id="lblDate" layoutX="200.0" layoutY="182.0" prefHeight="28.0" prefWidth="197.0" textFill="#d90aec">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Label layoutX="68.0" layoutY="132.0" text="User ID:" textFill="WHITE">
+      <Label layoutX="450.0" layoutY="182.0" text="User ID:">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <Label fx:id="lblUserId" layoutX="143.0" layoutY="135.0" prefHeight="24.0" prefWidth="63.0">
+      <Label fx:id="lblUserId" layoutX="536.0" layoutY="185.0" prefHeight="28.0" prefWidth="70.0" textFill="#c41aef">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>

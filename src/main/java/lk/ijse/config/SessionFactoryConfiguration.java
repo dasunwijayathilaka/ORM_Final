@@ -21,7 +21,7 @@ public class SessionFactoryConfiguration {
         configuration.addAnnotatedClass(Program.class);
         configuration.addAnnotatedClass(Registration.class);
         configuration.addAnnotatedClass(Payment.class);
-
+            //entity wala thiyena table map karaganna hadnne
         sessionFactory = configuration.buildSessionFactory();
     }
 
@@ -30,6 +30,6 @@ public class SessionFactoryConfiguration {
     }
 
     public Session getSession(){
-        return sessionFactory.openSession();
+        return sessionFactory.openSession();             //  setion return wenw
     }
 }

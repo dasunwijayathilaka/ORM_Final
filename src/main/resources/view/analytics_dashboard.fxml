@@ -10,14 +10,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootNode" prefHeight="676.0" prefWidth="680.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AnalyticsDashboard">
+<AnchorPane fx:id="rootNode" prefHeight="954.0" prefWidth="1401.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AnalyticsDashboard">
    <children>
-      <ImageView fitHeight="676.0" fitWidth="1148.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="953.0" fitWidth="1437.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/images2/dash1.jpg" />
+            <Image url="@../assets/images2/dash2.jpg" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="25.0" layoutY="177.0" strokeType="INSIDE" width="216.0">
+      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="472.0" layoutY="71.0" strokeType="INSIDE" width="358.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -34,22 +34,17 @@
                </stops>
             </LinearGradient>
          </fill></Rectangle>
-      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="64.0" layoutY="227.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons/student-icon.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="75.0" layoutY="189.0" prefHeight="33.0" prefWidth="102.0" text="Students" textFill="#00000083">
+      <Label layoutX="678.0" layoutY="104.0" prefHeight="34.0" prefWidth="122.0" text="Students" textFill="#00000083">
          <font>
-            <Font name="Tahoma" size="26.0" />
+            <Font name="Tahoma Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblStudentCount" layoutX="117.0" layoutY="230.0" prefHeight="48.0" prefWidth="98.0" text="100" textFill="#00000083">
+      <Label fx:id="lblStudentCount" layoutX="693.0" layoutY="139.0" prefHeight="48.0" prefWidth="98.0" text="100" textFill="#00000083">
          <font>
             <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="24.0" layoutY="347.0" strokeType="INSIDE" width="216.0">
+      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="925.0" layoutY="71.0" strokeType="INSIDE" width="358.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -66,22 +61,17 @@
                </stops>
             </LinearGradient>
          </fill></Rectangle>
-      <ImageView fitHeight="52.0" fitWidth="216.0" layoutX="63.0" layoutY="397.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons/programs.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="82.0" layoutY="359.0" prefHeight="33.0" prefWidth="110.0" text="Programs" textFill="#00000083">
+      <Label layoutX="1126.0" layoutY="106.0" prefHeight="39.0" prefWidth="146.0" text="Programs" textFill="#00000083">
          <font>
-            <Font name="Tahoma" size="26.0" />
+            <Font name="Arial Black" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblProgramCount" layoutX="126.0" layoutY="400.0" prefHeight="48.0" prefWidth="98.0" text="8" textFill="#00000083">
+      <Label fx:id="lblProgramCount" layoutX="1170.0" layoutY="143.0" prefHeight="48.0" prefWidth="98.0" text="8" textFill="#00000083">
          <font>
             <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="24.0" layoutY="8.0" strokeType="INSIDE" width="216.0">
+      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="24.0" layoutY="72.0" strokeType="INSIDE" width="358.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -98,22 +88,22 @@
                </stops>
             </LinearGradient>
          </fill></Rectangle>
-      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="63.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="158.0" fitWidth="174.0" layoutX="25.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/icons/registrations.png" />
+            <Image url="@../assets/icons/reg.png" />
          </image>
       </ImageView>
-      <Label layoutX="46.0" layoutY="20.0" prefHeight="34.0" prefWidth="174.0" text="Registrations" textFill="#00000083">
+      <Label layoutX="192.0" layoutY="106.0" prefHeight="34.0" prefWidth="174.0" text="Registrations" textFill="#00000083">
          <font>
             <Font name="Tahoma Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblRegCount" layoutX="116.0" layoutY="61.0" prefHeight="48.0" prefWidth="98.0" text="170" textFill="#00000083">
+      <Label fx:id="lblRegCount" layoutX="234.0" layoutY="141.0" prefHeight="48.0" prefWidth="98.0" text="170" textFill="#00000083">
          <font>
             <Font name="System Bold Italic" size="39.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="24.0" layoutY="514.0" strokeType="INSIDE" width="216.0">
+      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="25.0" layoutY="352.0" strokeType="INSIDE" width="358.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -130,36 +120,62 @@
                </stops>
             </LinearGradient>
          </fill></Rectangle>
-      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="32.0" layoutY="564.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons/transactions.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="48.0" layoutY="526.0" prefHeight="34.0" prefWidth="174.0" text="Transactions" textFill="#00000082">
+      <Label layoutX="187.0" layoutY="389.0" prefHeight="34.0" prefWidth="174.0" text="Transactions" textFill="#00000082">
          <font>
             <Font name="Tahoma Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblTransactionsCount" layoutX="92.0" layoutY="567.0" prefHeight="48.0" prefWidth="138.0" text="100000" textFill="#00000083">
+      <Label fx:id="lblTransactionsCount" layoutX="232.0" layoutY="425.0" prefHeight="48.0" prefWidth="138.0" text="10" textFill="#00000083">
          <font>
-            <Font name="System Bold Italic" size="23.0" />
+            <Font name="Britannic Bold" size="35.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="WHITE" height="116.0" layoutX="407.0" layoutY="174.0" strokeType="INSIDE" width="199.0" />
-      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="420.0" layoutY="224.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/icons/transactions.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="431.0" layoutY="186.0" prefHeight="33.0" prefWidth="145.0" text="Transactions" textFill="#00000083">
+      <Rectangle arcHeight="30.0" arcWidth="30.0" height="158.0" layoutX="482.0" layoutY="352.0" strokeType="INSIDE" width="358.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.07999999821186066" blue="0.8371711373329163" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="661.0" layoutY="390.0" prefHeight="34.0" prefWidth="174.0" text="Visiting" textFill="#00000082">
          <font>
-            <Font name="Tahoma" size="26.0" />
+            <Font name="Tahoma Bold" size="26.0" />
          </font>
       </Label>
-      <Label fx:id="lblStudentCount21" layoutX="475.0" layoutY="227.0" prefHeight="48.0" prefWidth="131.0" text="100000" textFill="#00000083">
+      <Label fx:id="lblStudentCount21" layoutX="689.0" layoutY="427.0" prefHeight="48.0" prefWidth="131.0" text="20+" textFill="#00000083">
          <font>
             <Font name="System Bold Italic" size="30.0" />
          </font>
       </Label>
+      <ImageView fitHeight="188.0" fitWidth="174.0" layoutX="472.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/stu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="215.0" layoutX="923.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/pg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="174.0" layoutX="25.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/tr.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="188.0" fitWidth="174.0" layoutX="482.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/vs.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
